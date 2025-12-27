@@ -16,7 +16,7 @@ export interface HomeworkImage {
 }
 
 function App() {
-  const { t, language } = useLanguage()
+  const {language } = useLanguage()
   const [images, setImages] = useState<HomeworkImage[]>([])
   const [selectedSubject, setSelectedSubject] = useState<string>(language === 'zh' ? '数学' : 'Math')
   const [currentImageId, setCurrentImageId] = useState<string | null>(null)
